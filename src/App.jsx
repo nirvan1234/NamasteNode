@@ -10,6 +10,7 @@ import appStore from './utils/appstore';
 import { Provider } from 'react-redux'
 import Connections from './components/Connections';
 import Requests from './components/Requests';
+import Pagination from './components/pagination';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/feed" element={<Feed />} />
             <Route path="/connections" element={<Connections />} />
             <Route path="/requests" element={<Requests />} />
+            <Route path="/page" element={<Pagination />} />
           </Route>
         </Routes>
       </BrowserRouter>

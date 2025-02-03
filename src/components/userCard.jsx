@@ -13,7 +13,6 @@ const UserCard = ({user}) => {
         try {
             const res = await axios.post(`http://localhost:4000/request/send/${status}/${userId}`,{},{withCredentials: true});
             dipatch(removeFeed(userId))
-  
            } catch (error) {
             console.log(error)
            }
